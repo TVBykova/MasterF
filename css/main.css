@@ -221,6 +221,13 @@ Border colors for elements in color section: rgba(255, 255, 255, 0.23)
 	}
 }
 
+
+@media (max-width: 768px) {
+	.header_info {
+		display: none;
+	}
+}
+
 @media (min-width: 992px) {
 	.container-left-half,
   .container-right-half {
@@ -2489,7 +2496,7 @@ a.button:focus {
 
 .theme_buttons.color4 a,
 .theme_button.color4 {
-	background-color: #9cc026;
+	background-color: #54be73;
 }
 
 .theme_buttons.inverse[class*="color"],
@@ -5670,7 +5677,7 @@ body.boxed {
 .response,
 .highlight,
 .highlight1 {
-	color: #3356B7;
+	color: #54be73;
 	border-color: #3356B7;
 }
 
@@ -7287,7 +7294,7 @@ body.boxed {
 
 .logo_text {
 	display: inline-block;
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 600;
 	line-height: 1.1;
 	vertical-align: middle;
@@ -7295,7 +7302,7 @@ body.boxed {
 
 .logo_text small {
 	display: block;
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: 600;
 	text-transform: uppercase;
 }
@@ -9141,7 +9148,7 @@ body.active-side-header.slide-right .page_header_side {
 
 .ds .highlight,
 .ds .highlight1 {
-	color: #3356B7;
+	color: #54be73;
 	border-color: #3356B7;
 }
 
@@ -9748,7 +9755,7 @@ body.active-side-header.slide-right .page_header_side {
 
 .ds .theme_buttons.color4 a,
 .ds .theme_button.color4 {
-	background-color: #9cc026;
+	background-color: #54be73;
 }
 
 .ds .theme_buttons.color1.inverse a,
@@ -11124,6 +11131,7 @@ body.active-side-header.slide-right .page_header_side {
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
+	filter: brightness(0.7);
 }
 
 .all-scr-cover .slide-image-wrap {
@@ -11460,7 +11468,6 @@ body.active-side-header.slide-right .page_header_side {
 	.sf-menu a {
 		display: block;
 		position: relative;
-		text-align: center;
 	}
 
 	.sf-menu li > ul > li > ul {
@@ -13620,7 +13627,7 @@ widget_pages
 	font-family: 'FontAwesome';
 	font-size: 12px;
 	content: "\f0da";
-	color: #3356B7;
+	color: #54be73;
 	position: absolute;
 	left: 0;
 	top: 50%;
@@ -16544,12 +16551,6 @@ a.color-icon.border-icon:hover {
 	text-transform: uppercase;
 }
 
-.block_phone {
-	cursor: pointer;
-}
-
-.num_phone {
-	padding-top: 0;
-	font-size: 20px;
-	font-weight: 600;
+.excellence_img {
+	border-radius: 20px;
 }
