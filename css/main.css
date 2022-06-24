@@ -221,13 +221,6 @@ Border colors for elements in color section: rgba(255, 255, 255, 0.23)
 	}
 }
 
-
-@media (max-width: 768px) {
-	.header_info {
-		display: none;
-	}
-}
-
 @media (min-width: 992px) {
 	.container-left-half,
   .container-right-half {
@@ -14319,7 +14312,7 @@ widget_pages
 
 @media (min-width: 400px) {
 	.teaser[class*="_bg_color"], .teaser[class*="with_"] {
-		padding: 35px;
+		padding: 35px 32px 35px 32px;
 	}
 }
 
@@ -16545,16 +16538,16 @@ a.color-icon.border-icon:hover {
 	text-transform: uppercase;
 }
 /* mine style */
+.logo_phone {
+	vertical-align: super;
+}
+
 .excellence_img {
 	border-radius: 20px;
 }
 
 .slide_section {
 	background-color: unset;
-}
-
-.container-fluid {
-	background-color: #ffffff;
 }
 
 .news_card {
