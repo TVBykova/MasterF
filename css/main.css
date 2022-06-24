@@ -7225,7 +7225,7 @@ body.boxed {
 
 @media (max-width: 414px) {
     .logo.logo_with_text img {
-        max-width: 70px;
+        max-width: 150px;
     }
 }
 
@@ -16567,18 +16567,17 @@ a.color-icon.border-icon:hover {
     font-size: 27px;
 }
 
-@media (max-width: 768px) {
-    .page_header {
-        padding: 15px 0;
-    }
-}
-
 @media (min-width: 991px) {
     .logo_mobMenu {
         display: none;
     }
-
     .mob_phoneMenu {
+        display: none;
+    }
+}
+
+@media (max-width: 441px) {
+    .text_Logo {
         display: none;
     }
 }
