@@ -2026,7 +2026,7 @@ a > img {
 }
 
 a:hover > img {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 hr {
@@ -7211,7 +7211,10 @@ body.boxed {
 
 @media (min-width: 1600px) {
     .logo img {
-        max-width: 270px;
+        max-width: 130px;
+    }
+    .logo_footer img {
+        max-width: 200px;
     }
 }
 
@@ -7219,7 +7222,7 @@ body.boxed {
     max-width: 220px;
 }
 
-.logo.logo_with_text img {
+.logo_footer.logo_with_text img {
     max-width: 250px;
 }
 
@@ -7268,7 +7271,7 @@ body.boxed {
 }
 
 .logo.vertical_logo .logo_text {
-    margin: 20px auto 0;
+    margin: 10px auto 0;
 }
 
 @media (min-width: 992px) {
@@ -7297,7 +7300,7 @@ body.boxed {
 }
 
 @media (min-width: 992px) {
-    img + .logo_text {
+    img + .text_Logo {
         margin-left: 16px;
     }
 }
@@ -12451,6 +12454,7 @@ article.post + article.post.topmargin_30,
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .categories-links a:last-child,
@@ -14440,7 +14444,7 @@ widget_pages
 }
 
 .teaser_icon[class*="_bg_color"].size_small > *, .teaser_icon.with_background.size_small > * {
-    line-height: 2.86em;
+    line-height: 2.6em;
 }
 
 .teaser_icon.image_icon {
@@ -16567,6 +16571,7 @@ a.color-icon.border-icon:hover {
     font-size: 27px;
 }
 
+
 @media (min-width: 991px) {
     .logo_mobMenu {
         display: none;
@@ -16580,4 +16585,12 @@ a.color-icon.border-icon:hover {
     .text_Logo {
         display: none;
     }
+}
+.logo_footer {
+    display: inline-block;
+    word-break: break-word;
+    font-size: 24px;
+    position: relative;
+    z-index: 2;
+    padding: 5px 0;
 }

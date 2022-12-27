@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>DokaFlex</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="js/vendor/html5shiv.min.js"></script>
+	<script src="js/vendor/respond.min.js"></script>
+	<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">
+			<i class="rt-icon2-cross2"></i>
+		</span>
+	</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group bottommargin_0"> <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input"> </div> <button type="submit" class="theme_button no_bg_button">Search</button> </form>
+		</div>
+	</div>
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+		</div>
+	</div>
+	<!-- eof .modal -->
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+			<!-- template sections -->
+			<header class="page_header header_white tall_header toggler_xs_right columns_margin_0">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 display_table">
+							<div class="header_left_logo display_table_cell"><a href="./" class="logo logo_with_text">
+								<img src="images/logo.svg" alt="">
+								<span class="logo_text text_Logo">
+                            <small>Типография флексопечати</small>
+                        </span>
+							</a></div>
+							<div class="header_mainmenu display_table_cell text-center">
+								<!-- main nav start -->
+								<nav class="mainmenu_wrapper">
+									<ul class="mainmenu nav sf-menu">
+										<img src="images/logo.svg" alt="" class="logo_mobMenu">
+										<li class="active"><a href="index.html">О компании</a>
+											<ul>
+												<li><a href="index.html">О нас</a></li>
+												<li><a href=".index-static.html">История</a></li>
+												<li><a href=".blog-full.html">Новости</a></li>
+												<li><a href=".technology-single.html">Технологии</a></li>
+												<li><a href=".index-single.html">Ваши новости</a></li>
+												<li><a href=".index-single.html">Сертификаты</a></li>
+											</ul>
+										</li>
+										<li><a href="products.html">Продукция</a>
+											<ul>
+												<li><a href="products_bakery.html">ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ</a></li>
+												<li><a href="products_grocery.html">БАКАЛЕЙНАЯ ПРОДУКЦИЯ </a></li>
+												<li><a href="products_milk.html">МОЛОЧНАЯ ПРОДУКЦИЯ</a></li>
+												<li><a href="products_semi_finished.html">ПОЛУФАБРИКАТЫ И ЗАМОРОЖЕННАЯ
+													ПРОДУКЦИЯ </a></li>
+												<li><a href="products_drink.html">НАПИТКИ (ПИВО И БЕЗАЛКОГОЛЬНАЯ ПРОДУКЦИЯ)</a></li>
+												<li><a href="products_hygiene.html">СРЕДСТВА ГИГИЕНЫ И БЫТОВАЯ
+													ХИМИЯ </a></li>
+												<li><a href="products_confection.html">КОНДИТЕРСКИЕ ИЗДЕЛИЯ </a></li>
+												<li><a href="products_packs.html">ПАКЕТЫ</a></li>
+												<li><a href="products_another.html">ДРУГОЕ </a></li>
+											</ul>
+										</li>
+										<!-- eof pages -->
+										<li><a href=".technologies.html">Услуги</a>
+											<ul>
+												<li><a href=".technologies.html">Разработка дизайна</a></li>
+												<li><a href=".technology-single.html">Адаптация изображения</a></li>
+												<li><a href=".technology-single.html">Производство печатных форм</a></li>
+												<li><a href=".technology-single.html">Производство упаковки</a></li>
+												<li><a href=".technology-single.html">Резка рулонных материалов</a></li>
+												<li><a href=".technology-single.html">Ламинирование рулонов</a></li>
+											</ul>
+										</li>
+										<li><a href=".technologies.html">Материалы</a>
+											<ul>
+												<li><a href=".technologies.html">БУМАГА ЛАМИНИРОВАННАЯ</a></li>
+												<li><a href=".technology-single.html">КВАДРЕКС, ТРИПЛЕКС</a></li>
+												<li><a href=".technology-single.html">МАТЕРИАЛЫ С МЕЖСЛОЙНОЙ ПЕЧАТЬЮ</a>
+												</li>
+												<li><a href=".technology-single.html">ПЛЕНКИ С TWIST-ЭФФЕКТОМ</a></li>
+												<li><a href=".technology-single.html">ПОЛИПРОПИЛЕН ЖЕМЧУЖНЫЙ</a></li>
+												<li><a href=".technology-single.html">ПОЛИПРОПИЛЕН МЕТАЛЛИЗИРОВАННЫЙ</a>
+												</li>
+												<li><a href=".technology-single.html">ПОЛИПРОПИЛЕН ПРОЗРАЧНЫЙ</a></li>
+												<li><a href=".technology-single.html">ПОЛИЭТИЛЕН БЕЛЫЙ</a></li>
+												<li><a href=".technology-single.html">ФОЛЬГА КАШИРОВАННАЯ</a></li>
+												<li><a href=".technology-single.html">ВИДЫ И ОБЛАСТЬ ПРИМЕНЕНИЯ</a></li>
+											</ul>
+										</li>
+										<li><a href=".technologies.html">Оборудование</a>
+											<ul>
+												<li><a href=".technologies.html">БОБИНОРЕЗАЛЬНАЯ МАШИНА PLUTO II</a></li>
+												<li><a href=".technology-single.html">БОБИНОРЕЗАЛЬНАЯ МАШИНА VENUS III</a>
+												</li>
+												<li><a href=".technology-single.html">ЛАМИНАТОРЫ LAMIFLEX И COMEXI</a></li>
+												<li><a href=".technology-single.html">СИСТЕМА KODAK FLEXCEL NX</a></li>
+												<li><a href=".technology-single.html">ПЕЧАТНЫЕ МАШИНЫ SOMA FLEX IMPERIA</a>
+												</li>
+												<li><a href=".technology-single.html">КОНТРОЛЬНО-ИЗМЕРИТЕЛЬНОЕ
+													ОБОРУДОВАНИЕ</a></li>
+											</ul>
+										</li>
+										<li><a href=".technologies.html">Вакансии</a></li>
+										<!-- contacts -->
+										<li><a href=".contact.html">Контакты</a></li>
+										<!-- eof contacts -->
+									</ul>
+								</nav>
+								<!-- eof main nav -->
+								<!-- header toggler --><span class="toggle_menu"><span></span></span>
+							</div>
+							<div class="header_right_buttons display_table_cell text-right hidden-xs">
+								<div class="logo_text logo_phone"><span class="grey"><a href="tel:+375293857300">+375 29 385 73 00</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="page_breadcrumbs ds parallax section_padding_top_40 section_padding_bottom_40">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2>Полуфабрикаты и замороженная продукция</h2>
+							<ol class="breadcrumb greylinks color4">
+								<li> <a href="./">
+							Главная
+						</a> </li>
+								<li> <a href="#">Продукция</a> </li>
+								<li class="active">Полуфабрикаты и замороженная продукция</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="ls section_padding_top_50 section_padding_bottom_130 columns_padding_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-10 col-sm-push-1">
+							<article class="single-post vertical-item content-padding big-padding with_background post rounded overflow_hidden">
+								<div class="item-media-wrap">
+									<div class="entry-thumbnail item-media"> <img src="images/products/zamorozh_prod_965x800.png" alt=""> </div>
+									<div class="entry-meta ds content-justify">
+										<div class="inline-content big-spacing small-text darklinks"> <span class="categories-links">
+									<i class="fa fa-tags highlight rightpadding_5" aria-hidden="true"></i>
+									<span href="blog-right.html">Упаковка для замороженных продуктов, требования и особенности</span>
+									<!-- <a href="blog-right.html">Plantifixation</a> -->
+								</span> </div>
+										<div> <div class="post-author teaser_icon main_bg_color round size_small">
+											<i class="fa fa-star-o"></i>
+										</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-content">
+									<div class="entry-content">
+										<p>
+											Замороженную продукцию упаковывают в различные упаковочные материалы. Главным образом, в качестве упаковочного материала используются контейнеры и пакеты из пластика, а также комбинированные упаковочные материалы (включая упаковку на основе бумаги и фольги, к примеру, для мороженого). Однако при всем имеющимся разнообразии основным упаковочным материалом для фасовки замороженной продукции являются пленочные полимерные материалы. Какие главные требования предъявляются к упаковке для замороженной продукции и в чем особенности?
+										</p>
+										<p>
+											В недалеком прошлом основными функциями, которые выполняла упаковка, были хранение и перевозка; сейчас функции упаковки значительно расширились. Например, согласно статистическим данным, 67 % потребителей делают свой выбор в магазине в пользу того или иного продукта или изделия, учитывая прежде всего привлекательность и качество упаковки. Конечно, заявлять, что упаковка важнее содержимого в ней изделия, нельзя. Однако упаковка, будучи связующим звеном между покупателем и производителем, формирует определенный имидж продукции и побуждает к покупке товара.
+									</p>
+										<p>
+											Упаковку для продукта можно сравнить с одеждой для человека. Это является и необходимостью, но в это же время она позволяет выделиться. Как известно, мода изменчива, она постоянно меняется, двигаясь вперед. Замороженные продукты (в народе “заморозка”) являются сравнительно молодым и одним из наиболее динамично развивающихся сегментов на рынке. Поэтому и упаковочный рынок для данного сегмента энергично, “по-молодежному” развивается. В настоящее время многие компании-производители упаковки для замороженной продукции ищут новые решения, внедряют инновационные материалы, проводят исследования.
+									</p>
+										<p>
+											Замороженная продукция представлена большим ассортиментом изделий разной степени готовности: мясо и изделия из мяса, полуфабрикаты из курицы и мяса птицы, морепродукты, овощи и смеси из овощей, картофель фри, грибы, ягоды, фрукты, пицца, пельмени, тесто, блинчики. Всего и не перечислишь! Из-за нехватки времени на приготовление еды дома популярность различных полуфабрикатов постоянно растет. Для упаковки данной продукции применяются пленки из полиэтилена и полиэстер-полиэтилена. Данная упаковка не становится хрупкой при минусовых температурах, дает возможность надежно защищать продукцию от различных воздействий внешних факторов, а процесс фасовки полностью автоматизирован. “Прозрачное окно”, предусмотренное в данной упаковке, дает возможность покупателю видеть содержимое, что стимулирует продажи.
+										</p>
+
+										<blockquote>
+											<h5>В чем морозить?</h5>  </blockquote>
+									<p>Из-за определенных особенностей хранения замороженной продукции, выбор материалов достаточно ограничен, т.к. только некоторые упаковочные материалы могут выдерживать низкие температуры. Высокая степень морозостойкости пленок, а также их сварных швов является одним из главных качеств, предъявляемых к упаковке для продукции глубокой заморозки. Большинство замороженных продуктов имеют острые края, именно поэтому огромное внимание уделяется такому свойству упаковки, как высокая устойчивость к проколу. Пленочная упаковка, которая изготавливается из многослойного полиэтилена или из материалов на основе разных полимерных слоев, отвечает данным требованиям. Некоторые замороженные продукты в последствие разогреваются прямо в упаковке, именно поэтому упаковочный материал должен выдерживать и перепад температур, и воздействие микроволн.
+									</p>
+										<blockquote>
+											<h5>Полезные замороженные продукты</h5>  </blockquote>
+										<p> Еще недавно большинство россиян считали, что полезными могут быть только свежие фрукты и овощи. Однако при хранении длительное время содержание полезных веществ в свежих овощах и фруктах уменьшается. А в продукции, которую моментально заморозили (шоковая заморозка), сохраняется большая часть полезных для организма человека веществ. Научно доказанным является тот факт, что в замороженной продукции сохраняется больше полезных минеральных веществ и витаминов, чем в продукции, хранящейся другими способами (к примеру, при консервировании). Такие популярные замороженные овощи, как стручковая фасоль, брокколи и цветная капуста; а также замороженные фрукты, ягоды и грибы получили заслуженное признание у российского потребителя. Самой привлекательной упаковкой для замороженных ягод, овощей и грибов является пакет, изготовленный из полиэтиленовой пленки, который имеет отличный глянец и высокие барьерные свойства. Обычно пленка производится из 3-хслойного ПВД (полиэтилена высокого давления) со специальными добавками, иногда из многослойных полимерных пленок, а также комбинированных материалов.
+										</p>
+										<blockquote>
+											<h5>Популярные замороженные продукты</h5>  </blockquote>
+										<p>Любимое многими и вкусное мороженое в последнее время изменило и свою форму, и, соответственно, свою упаковку. Для упаковки мороженого, как правило, используют металлизированный или жемчужный полипропилен. Упаковка весит совсем немного, а современная технология нанесения клея методом холодной сварки дает возможность упаковывать мороженое без использования при сварке высоких температур. Это дает возможность производителю минимизировать издержки и сохраняет продукт в привлекательном виде. Принимая во внимание тот факт, что 40% покупателей мороженого - это дети, привлекательность и яркость упаковки - мощный стимулятором спроса на товар.
+										</p>
+									<p>
+										<b>Самое широкое использование для упаковки замороженной продукции нашли следующие гибкие упаковочные материалы:</b>
+									</p>
+										<p>
+											РЕТ/РЕ – Ягоды, овощи, рыба, грибы, картофель фри, котлеты, морепродукты;<br>
+											РЕ – Овощи, ягоды, грибы, картофель фри, пельмени, котлеты;<br>
+											ВОРР/РЕ – Пельмени, полуфабрикаты для выпечки, тесто, вареники;<br>
+											ОРР матовый, ОРР жемчужный – Мороженое.<br>
+										</p>
+									</div>
+									<!-- .entry-content -->
+								</div>
+								<!-- .item-content -->
+							</article>
+						</div>
+						<!--eof .col-sm-8 (main content)-->
+					</div>
+				</div>
+			</section>
+			<footer class="page_footer ds section_padding_top_30 section_padding_bottom_30 columns_margin_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-12 text-center">
+							<div class="logo_footer vertical_logo topmargin_20"><img src="images/logoFooter.svg" alt="" class="logo_footer"> <span
+									class="logo_text">
+                       <small>Типография флексопечати</small>
+                    </span></div>
+						</div>
+						<div class="col-lg-6 col-md-4 col-sm-6 text-center text-sm-left">
+							<div class="widget widget_text greylinks color2">
+								<h4 class="widget-title"> Наши контакты </h4>
+								<div class="media small-media">
+									<div class="media-left"><i class="fa fa-map-marker highlight2"></i></div>
+									<div class="media-body">РБ, Минская область, Минский район, Новодворский с/с, 27А-1,
+										район аг. Гатово
+									</div>
+								</div>
+								<div class="media small-media">
+									<div class="media-left"><i class="fa fa-pencil highlight2"></i></div>
+									<div class="media-body"><a href="mailto:info@dokaflex.bу">info@dokaflex.bу</a>
+									</div>
+								</div>
+								<div class="media small-media">
+									<div class="media-left"><i class="fa fa-phone highlight2"></i></div>
+									<div class="media-body"><a href=tel:+375293857300">+375 29 385 73 00</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<section class="ds ms page_copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p>&copy; Design.Studio/DokaFlex'2023</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

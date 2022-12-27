@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>DokaFlex</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="js/vendor/html5shiv.min.js"></script>
+	<script src="js/vendor/respond.min.js"></script>
+	<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">
+			<i class="rt-icon2-cross2"></i>
+		</span>
+	</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group bottommargin_0"> <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input"> </div> <button type="submit" class="theme_button no_bg_button">Search</button> </form>
+		</div>
+	</div>
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+		</div>
+	</div>
+	<!-- eof .modal -->
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+			<!-- template sections -->
+			<header class="page_header header_white tall_header toggler_xs_right columns_margin_0">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 display_table">
+							<div class="header_left_logo display_table_cell"><a href="./" class="logo logo_with_text">
+								<img src="images/logo.svg" alt="">
+								<span class="logo_text text_Logo">
+                            <small>Типография флексопечати</small>
+                        </span>
+							</a></div>
+							<div class="header_mainmenu display_table_cell text-center">
+								<!-- main nav start -->
+								<nav class="mainmenu_wrapper">
+									<ul class="mainmenu nav sf-menu">
+										<img src="images/logo.svg" alt="" class="logo_mobMenu">
+										<li class="active"><a href="index.html">О компании</a>
+											<ul>
+												<li><a href="index.html">О нас</a></li>
+												<li><a href=".index-static.html">История</a></li>
+												<li><a href=".blog-full.html">Новости</a></li>
+												<li><a href=".technology-single.html">Технологии</a></li>
+												<li><a href=".index-single.html">Ваши новости</a></li>
+												<li><a href=".index-single.html">Сертификаты</a></li>
+											</ul>
+										</li>
+										<li><a href="products.html">Продукция</a>
+											<ul>
+												<li><a href="products_bakery.html">ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ</a></li>
+												<li><a href="products_grocery.html">БАКАЛЕЙНАЯ ПРОДУКЦИЯ </a></li>
+												<li><a href="products_milk.html">МОЛОЧНАЯ ПРОДУКЦИЯ</a></li>
+												<li><a href="products_semi_finished.html">ПОЛУФАБРИКАТЫ И ЗАМОРОЖЕННАЯ
+													ПРОДУКЦИЯ </a></li>
+												<li><a href="products_drink.html">НАПИТКИ (ПИВО И БЕЗАЛКОГОЛЬНАЯ ПРОДУКЦИЯ)</a></li>
+												<li><a href="products_hygiene.html">СРЕДСТВА ГИГИЕНЫ И БЫТОВАЯ
+													ХИМИЯ </a></li>
+												<li><a href="products_confection.html">КОНДИТЕРСКИЕ ИЗДЕЛИЯ </a></li>
+												<li><a href="products_packs.html">ПАКЕТЫ</a></li>
+												<li><a href="products_another.html">ДРУГОЕ </a></li>
+											</ul>
+										</li>
+										<!-- eof pages -->
+										<li><a href=".technologies.html">Услуги</a>
+											<ul>
+												<li><a href=".technologies.html">Разработка дизайна</a></li>
+												<li><a href=".technology-single.html">Адаптация изображения</a></li>
+												<li><a href=".technology-single.html">Производство печатных форм</a></li>
+												<li><a href=".technology-single.html">Производство упаковки</a></li>
+												<li><a href=".technology-single.html">Резка рулонных материалов</a></li>
+												<li><a href=".technology-single.html">Ламинирование рулонов</a></li>
+											</ul>
+										</li>
+										<li><a href=".technologies.html">Материалы</a>
+											<ul>
+												<li><a href=".technologies.html">БУМАГА ЛАМИНИРОВАННАЯ</a></li>
+												<li><a href=".technology-single.html">КВАДРЕКС, ТРИПЛЕКС</a></li>
+												<li><a href=".technology-single.html">МАТЕРИАЛЫ С МЕЖСЛОЙНОЙ ПЕЧАТЬЮ</a>
+												</li>
+												<li><a href=".technology-single.html">ПЛЕНКИ С TWIST-ЭФФЕКТОМ</a></li>
+												<li><a href=".technology-single.html">ПОЛИПРОПИЛЕН ЖЕМЧУЖНЫЙ</a></li>
+												<li><a href=".technology-single.html">ПОЛИПРОПИЛЕН МЕТАЛЛИЗИРОВАННЫЙ</a>
+												</li>
+												<li><a href=".technology-single.html">ПОЛИПРОПИЛЕН ПРОЗРАЧНЫЙ</a></li>
+												<li><a href=".technology-single.html">ПОЛИЭТИЛЕН БЕЛЫЙ</a></li>
+												<li><a href=".technology-single.html">ФОЛЬГА КАШИРОВАННАЯ</a></li>
+												<li><a href=".technology-single.html">ВИДЫ И ОБЛАСТЬ ПРИМЕНЕНИЯ</a></li>
+											</ul>
+										</li>
+										<li><a href=".technologies.html">Оборудование</a>
+											<ul>
+												<li><a href=".technologies.html">БОБИНОРЕЗАЛЬНАЯ МАШИНА PLUTO II</a></li>
+												<li><a href=".technology-single.html">БОБИНОРЕЗАЛЬНАЯ МАШИНА VENUS III</a>
+												</li>
+												<li><a href=".technology-single.html">ЛАМИНАТОРЫ LAMIFLEX И COMEXI</a></li>
+												<li><a href=".technology-single.html">СИСТЕМА KODAK FLEXCEL NX</a></li>
+												<li><a href=".technology-single.html">ПЕЧАТНЫЕ МАШИНЫ SOMA FLEX IMPERIA</a>
+												</li>
+												<li><a href=".technology-single.html">КОНТРОЛЬНО-ИЗМЕРИТЕЛЬНОЕ
+													ОБОРУДОВАНИЕ</a></li>
+											</ul>
+										</li>
+										<li><a href=".technologies.html">Вакансии</a></li>
+										<!-- contacts -->
+										<li><a href=".contact.html">Контакты</a></li>
+										<!-- eof contacts -->
+									</ul>
+								</nav>
+								<!-- eof main nav -->
+								<!-- header toggler --><span class="toggle_menu"><span></span></span>
+							</div>
+							<div class="header_right_buttons display_table_cell text-right hidden-xs">
+								<div class="logo_text logo_phone"><span class="grey"><a href="tel:+375293857300">+375 29 385 73 00</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="page_breadcrumbs ds parallax section_padding_top_40 section_padding_bottom_40">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2>Хлебобулочные изделия</h2>
+							<ol class="breadcrumb greylinks color4">
+								<li> <a href="./">
+							Главная
+						</a> </li>
+								<li> <a href="#">Продукция</a> </li>
+								<li class="active">Хлебобулочные изделия</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="ls section_padding_top_50 section_padding_bottom_130 columns_padding_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-10 col-sm-push-1">
+							<article class="single-post vertical-item content-padding big-padding with_background post rounded overflow_hidden">
+								<div class="item-media-wrap">
+									<div class="entry-thumbnail item-media"> <img src="images/products/xleb_965x800.png" alt=""> </div>
+									<div class="entry-meta ds content-justify">
+										<div class="inline-content big-spacing small-text darklinks"> <span class="categories-links">
+									<i class="fa fa-tags highlight rightpadding_5" aria-hidden="true"></i>
+									<span href="blog-right.html">Возможности упаковки хлеба</span>
+									<!-- <a href="blog-right.html">Plantifixation</a> -->
+								</span> </div>
+										<div> <div class="post-author teaser_icon main_bg_color round size_small">
+											<i class="fa fa-star-o"></i>
+										</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-content">
+									<div class="entry-content">
+										<p>Предпочтения потребителей постоянно изменяются, что обусловлено целым рядом факторов, в том числе и внешним видом продукции, а значит и его упаковкой. “Упаковка помогает продавать – это истина относится к любому товару массового спроса, и хлебобулочные изделия – не исключение.
+											На сегодняшний день производители хлебобулочных изделий используют несколько наиболее эффективных технологий упаковки хлебобулочных изделий.</p>
+										<blockquote>
+											<h5>Упаковка в термоусадочную пленку</h5>  </blockquote>
+										<p>Данная технология используется большинством белорусских хлебозаводов для упаковки своей продукции, в основном для черного хлеба. Упаковка хлебобулочных изделий в термоусадочную пленку позволяет увеличивать сроки реализации, а также придает изделию эстетичный товарный вид. Кроме того, пленка предохраняет продукт от пыли и влаги. Упаковка в термоусадочную пленку – очень удобный способ упаковки даже предварительно нарезанного хлеба.
+											В настоящее время наметилась тенденция перехода от термоусадочных ПВХ-пленок к пленкам на основе полиолефинов.
+											Использование в упаковке хлебобулочных изделий перфорированной пленки позволяет добиться эффекта хрустящей корочки. Для проникновения внутрь упаковки небольшого количества воздуха применяется специальное устройство для перфорации пленки. Выпуск хлебной продукции с хрустящей корочкой позволит занять неосвоенный сегмент рынка и увеличить продажи благодаря использованию упаковки из перфорированной пленки (широко используемой в Европе), что наверняка заинтересует белорусских производителей.
+											Подавляющее большинство термоусадочных машин, которые за последние несколько лет были установлены на белорусских предприятиях хлебной отрасли – оборудование итальянской компании SMIPACK.</p>
+										<ul class="list2 grey regular">
+											<li>Недорого</li>
+											<li>Надежно</li>
+										</ul>
+										В этом убедились те, кто уже использует его в своем производственном процессе. В частности, компания "Синергия" за последние три года поставила на белорусские хлебозаводы около 100 машин Smipack.
+										<blockquote>
+											<h5>Упаковка в пакеты</h5>  </blockquote>
+										<p>Стандартная европейская технология, которая прекрасно подходит для нарезанного хлеба, особенно для пшеничного хлеба (батоны). Она обеспечивает удобство для покупателя – возможность многократного использования пакета: его не надо разрывать, он легко закрывается, используется до полного употребления булки. Для производителя пакеты привлекательны тем, что на них можно наносить яркую печать с необходимой информацией для покупателя.
+											В полипропиленовой пленке пакета, в отличие от термоусадочной ПВХ-пленки, хлеб «дышит» – не отпотевает, не «цветет», не сохнет. Можно упаковывать в «полуостывшем» виде, а при использовании пакета с перфорацией можно упаковывать горячий хлеб.
+											Также такой способ упаковки, как упаковка хлеба в пакеты, характеризуется низкой энергоемкостью, так как не требуется нагрев.
+											В Беларуси уже работают высокопроизводительные линии по нарезке и упаковке хлеба в пакеты немецкой компании HARTMANN, оборудование которой популярно в Европе. Если не требуется высокая производительность, многие белорусские предприятия используют небольшие хлеборезки немецкой компании WABAMA – недорогие и очень надежные.</p>
+										<h5>Упаковка в стрейч-пленку</h5>  </blockquote>
+										<p>Упаковка хлебобулочных изделий в стрейч-пленку очень популярна за рубежом. Например, в Польше 60 % всего хлеба упаковывается в стрейч-пленку, а термоусадочная пленка вообще не используется.
+											В Беларуси этот вид упаковки производители пока используют мало. Хорошие перспективы стрейч-пленки обусловлены тем, что хлеб, упакованный таким образом, имеет отличный внешний вид, так как она «дышит», пропуская выделяющуюся из изделий влагу.
+											В отличие от термоусадочной пленки на основе ПВХ, она разрешена для контакта с пищевыми продуктами во всех европейских странах. Эта упаковка требует меньших затрат электроэнергии, так как не используется термотуннель.
+											Самое просто устройство для упаковки хлеба в стрейч-пленку, не требующее больших затрат, – это “горячий стол. С его помощью при наличии небольшого навыка можно упаковывать до 10 единиц продукции, например булочек, в минуту. Небольшие кондитерские изделия (печенье, пряники, вафли) укладываются на лоток и также заворачиваются в ПВХ-пленку.
+											Автоматическая упаковка в стрейч-пленку осуществляется на оборудовании швейцарской компании WALDYS S.A., которое успешно работает и в Беларуси. Производительность такого оборудования составляет до 55 упаковок в минуту. Наиболее популярна в Беларуси стрейч-пленка KRAM.
+										</p>
+										<h5>Упаковка на горизонтальных упаковочных линиях</h5>  </blockquote>
+										<p>Технология упаковки популярна как в Европе, так и в России. Горизонтальные линии прекрасно подходят как для упаковки отдельных изделий, например, батонов, так и для групповой упаковки небольших изделий (булочек, ватрушек, кексов и др.). На пленку, в которую упаковываются изделия, может быть нанесена различная печать, поэтому упакованный продукт может быть очень красиво оформлен. Хорошо зарекомендовало себя как в России, так и в Беларуси высокопроизводительное оборудование итальянской компании PFM и украинской компании "Эло Пак" .
+											Упаковка хлеба в бумажные пакеты также популярна в Западной Европе, однако этот тип упаковки больше подходит для мелких и средних пекарен, то есть сравнительно небольших объемов производства. Эта технология вряд ли будет востребована крупными белорусскими хлебозаводами из-за высокой себестоимости упаковки.
+											Производители хлебобулочных изделий, заботящиеся об успешном развитии своего бизнеса, уже убедились в необходимости качественной и современной упаковки, способствующей увеличению объемов продаж. Современный покупатель желает приобрести не дешевый товар, а качественный товар недорого. Для качественного товара незначительное увеличение его стоимости за счет хорошей упаковки уже не оказывает существенного влияния на решение о покупке для многих покупателей, особенно в крупных городах. Как показывает опыт работы гипермаркетов Минска, более дорогой товар в современной, привлекательной и удобной упаковке часто продается успешнее и быстрее.
+										</p>
+									</div>
+									<!-- .entry-content -->
+								</div>
+								<!-- .item-content -->
+							</article>
+						</div>
+						<!--eof .col-sm-8 (main content)-->
+					</div>
+				</div>
+			</section>
+			<footer class="page_footer ds section_padding_top_30 section_padding_bottom_30 columns_margin_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-12 text-center">
+							<div class="logo_footer vertical_logo topmargin_20"><img src="images/logoFooter.svg" alt="" class="logo_footer"> <span
+									class="logo_text">
+                       <small>Типография флексопечати</small>
+                    </span></div>
+						</div>
+						<div class="col-lg-6 col-md-4 col-sm-6 text-center text-sm-left">
+							<div class="widget widget_text greylinks color2">
+								<h4 class="widget-title"> Наши контакты </h4>
+								<div class="media small-media">
+									<div class="media-left"><i class="fa fa-map-marker highlight2"></i></div>
+									<div class="media-body">РБ, Минская область, Минский район, Новодворский с/с, 27А-1,
+										район аг. Гатово
+									</div>
+								</div>
+								<div class="media small-media">
+									<div class="media-left"><i class="fa fa-pencil highlight2"></i></div>
+									<div class="media-body"><a href="mailto:info@dokaflex.bу">info@dokaflex.bу</a>
+									</div>
+								</div>
+								<div class="media small-media">
+									<div class="media-left"><i class="fa fa-phone highlight2"></i></div>
+									<div class="media-body"><a href=tel:+375293857300">+375 29 385 73 00</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<section class="ds ms page_copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p>&copy; Design.Studio/DokaFlex'2023</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
