@@ -16612,3 +16612,28 @@ a.color-icon.border-icon:hover {
 .logo_mobMenu {
     max-width: 150px;
 }
+
+.mouse-parallax {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.mouse-parallax-bg,
+.mouse-parallax-fog-1,
+.mouse-parallax-fog-2 {
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 110%;
+    height: 110%;
+    transition: all 0.1s ease;
+    background-image: url(https://www.ardmorewhisky.com/modules/custom/bsi_core/src/img/Layer_1.jpg);
+}
+.mouse-parallax-fog-1 {
+    background-image: url(https://www.ardmorewhisky.com/modules/custom/bsi_core/src/img/Layer_2.png);
+    left: -10%;
+}
+.mouse-parallax-fog-2 {
+    background-image: url(https://www.ardmorewhisky.com/modules/custom/bsi_core/src/img/Layer_3.png);
+}
