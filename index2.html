@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title>DokaFlex</title>
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+    <link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a
+        href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.
+</div>
+<![endif]-->
+<div class="preloader">
+    <div class="preloader_image"></div>
+</div>
+<!-- Unyson messages modal -->
+<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+    <div class="fw-messages-wrap ls with_padding">
+        <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+        <!--
+    <ul class="list-unstyled">
+        <li>Message To User</li>
+    </ul>
+    -->
+    </div>
+</div>
+<!-- eof .modal -->
+<!-- wrappers for visual page editor and boxed version of template -->
+<div id="canvas">
+    <div id="box_wrapper">
+        <!-- template sections -->
+        <header class="page_header header_white tall_header toggler_xs_right columns_margin_0">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 display_table">
+                        <div class="header_left_logo display_table_cell">
+                            <div><a href="./" class="logo logo_with_text">
+                                <div><img src="images/logo.svg" alt=""></div>
+                                <div> <span class="logo_text">
+                            <small>Типография флексопечати</small>
+                        </span>
+                                </div>
+                            </a></div>
+                        </div>
+                        <div class="header_mainmenu display_table_cell text-center">
+                            <!-- main nav start -->
+                            <nav class="mainmenu_wrapper">
+                                <ul class="mainmenu nav sf-menu">
+                                    <img src="images/logo.svg" alt="" class="logo_mobMenu">
+                                    <li class="active"><a href="index.html">О компании</a>
+                                        <ul>
+                                            <li><a href="index.html">О нас</a></li>
+                                            <li><a href="history.html">История</a></li>
+                                            <li><a href="news.html">Новости</a></li>
+                                            <li><a href=".technology-single.html">Технологии</a></li>
+                                            <li><a href=".index-single.html">Ваши отзывы</a></li>
+                                            <li><a href=".index-single.html">Сертификаты</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="products.html">Продукция</a>
+                                        <ul>
+                                            <li><a href="products_bakery.html">ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ</a></li>
+                                            <li><a href="products_grocery.html">БАКАЛЕЙНАЯ ПРОДУКЦИЯ </a></li>
+                                            <li><a href="products_milk.html">МОЛОЧНАЯ ПРОДУКЦИЯ</a></li>
+                                            <li><a href="products_semi_finished.html">ПОЛУФАБРИКАТЫ И ЗАМОРОЖЕННАЯ
+                                                ПРОДУКЦИЯ </a></li>
+                                            <li><a href="products_drink.html">ПИВО И БЕЗАЛКОГОЛЬНАЯ ПРОДУКЦИЯ</a></li>
+                                            <li><a href="products_hygiene.html">СРЕДСТВА ГИГИЕНЫ И БЫТОВАЯ
+                                                ХИМИЯ </a></li>
+                                            <li><a href="products_confection.html">КОНДИТЕРСКИЕ ИЗДЕЛИЯ </a></li>
+                                            <li><a href="products_packs.html">ПАКЕТЫ</a></li>
+                                            <li><a href="products_another.html">ДРУГОЕ </a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- eof pages -->
+                                    <li><a href=".technologies.html">Услуги</a>
+                                        <ul>
+                                            <li><a href=".technologies.html">Разработка дизайна</a></li>
+                                            <li><a href=".technology-single.html">Адаптация изображения</a></li>
+                                            <li><a href=".technology-single.html">Производство печатных форм</a></li>
+                                            <li><a href=".technology-single.html">Производство упаковки</a></li>
+                                            <li><a href=".technology-single.html">Резка рулонных материалов</a></li>
+                                            <li><a href=".technology-single.html">Ламинирование рулонов</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href=".technologies.html">Материалы</a>
+                                        <ul>
+                                            <li><a href=".technologies.html">БУМАГА ЛАМИНИРОВАННАЯ</a></li>
+                                            <li><a href=".technology-single.html">КВАДРЕКС, ТРИПЛЕКС</a></li>
+                                            <li><a href=".technology-single.html">МАТЕРИАЛЫ С МЕЖСЛОЙНОЙ ПЕЧАТЬЮ</a>
+                                            </li>
+                                            <li><a href=".technology-single.html">ПЛЕНКИ С TWIST-ЭФФЕКТОМ</a></li>
+                                            <li><a href=".technology-single.html">ПОЛИПРОПИЛЕН ЖЕМЧУЖНЫЙ</a></li>
+                                            <li><a href=".technology-single.html">ПОЛИПРОПИЛЕН МЕТАЛЛИЗИРОВАННЫЙ</a>
+                                            </li>
+                                            <li><a href=".technology-single.html">ПОЛИПРОПИЛЕН ПРОЗРАЧНЫЙ</a></li>
+                                            <li><a href=".technology-single.html">ПОЛИЭТИЛЕН БЕЛЫЙ</a></li>
+                                            <li><a href=".technology-single.html">ФОЛЬГА КАШИРОВАННАЯ</a></li>
+                                            <li><a href=".technology-single.html">ВИДЫ И ОБЛАСТЬ ПРИМЕНЕНИЯ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href=".technologies.html">Оборудование</a>
+                                        <ul>
+                                            <li><a href=".technologies.html">БОБИНОРЕЗАЛЬНАЯ МАШИНА PLUTO II</a></li>
+                                            <li><a href=".technology-single.html">БОБИНОРЕЗАЛЬНАЯ МАШИНА VENUS III</a>
+                                            </li>
+                                            <li><a href=".technology-single.html">ЛАМИНАТОРЫ LAMIFLEX И COMEXI</a></li>
+                                            <li><a href=".technology-single.html">СИСТЕМА KODAK FLEXCEL NX</a></li>
+                                            <li><a href=".technology-single.html">ПЕЧАТНЫЕ МАШИНЫ SOMA FLEX IMPERIA</a>
+                                            </li>
+                                            <li><a href=".technology-single.html">КОНТРОЛЬНО-ИЗМЕРИТЕЛЬНОЕ
+                                                ОБОРУДОВАНИЕ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href=".technologies.html">Вакансии</a></li>
+                                    <!-- contacts -->
+                                    <li><a href=".contact.html">Контакты</a></li>
+                                    <!-- eof contacts -->
+                                </ul>
+                            </nav>
+                            <!-- eof main nav -->
+                            <!-- header toggler --><span class="toggle_menu"><span></span></span>
+                        </div>
+                        <div class="header_right_buttons display_table_cell text-right hidden-xs">
+                            <div class="logo_text logo_phone"><span class="grey"><a href="tel:+375293857300">+375 29 385 73 00</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="intro_section page_mainslider ds slide_section light_md_bg_color all-scr-cover">
+            <div class="flexslider" data-dots="true" data-nav="true">
+                <ul class="slides">
+                    <li>
+                        <div class="slide-image-wrap">
+                            <div class="rounded-container"><img src="images/slide01.jpg" alt=""></div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <div class="slide_description_wrapper">
+                                        <div class="slide_description">
+                                            <div class="intro-layer" data-animation="fadeInUp">
+                                                <p class="semibold text-uppercase grey"> Флексографская печать в <span
+                                                        class="num_text">10</span>
+                                                    красок </p>
+                                            </div>
+                                            <div class="intro-layer" data-animation="fadeInUp">
+                                                <h2>Производство гибкой полимерной упаковки</h2>
+                                            </div>
+                                            <div class="intro-layer" data-animation="fadeInUp">
+                                                <div class="slide_buttons"><a href=".contact.html"
+                                                                              class="theme_button color4 min_width_button">Оформить
+                                                    заказ</a></div>
+                                            </div>
+                                        </div>
+                                        <!-- eof .slide_description -->
+                                    </div>
+                                    <!-- eof .slide_description_wrapper -->
+                                </div>
+                                <!-- eof .col-* -->
+                            </div>
+                            <!-- eof .row -->
+                        </div>
+                        <!-- eof .container -->
+                    </li>
+                    <li>
+                        <div class="slide-image-wrap">
+                            <div class="rounded-container"><img src="images/slide02.jpg" alt=""></div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <div class="slide_description_wrapper">
+                                        <div class="slide_description">
+                                            <div class="intro-layer" data-animation="fadeInUp">
+                                                <p class="semibold text-uppercase grey"> Флексографская печать в 10
+                                                    красок </p>
+                                            </div>
+                                            <div class="intro-layer" data-animation="fadeInUp">
+                                                <h2>Производство гибкой полимерной упаковки</h2>
+                                            </div>
+                                            <div class="intro-layer" data-animation="fadeInUp">
+                                                <div class="slide_buttons"><a href=".contact.html"
+                                                                              class="theme_button color4 min_width_button">Оформить
+                                                    заказ</a></div>
+                                            </div>
+                                        </div>
+                                        <!-- eof .slide_description -->
+                                    </div>
+                                    <!-- eof .slide_description_wrapper -->
+                                </div>
+                                <!-- eof .col-* -->
+                            </div>
+                            <!-- eof .row -->
+                        </div>
+                        <!-- eof .container -->
+                    </li>
+                    <li>
+                        <div class="slide-image-wrap">
+                            <div class="rounded-container"><img src="images/slide03.jpg" alt=""></div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <div class="slide_description_wrapper">
+                                        <div class="slide_description">
+                                            <div class="intro-layer" data-animation="fadeInUp">
+                                                <p class="semibold text-uppercase grey"> Флексографская печать в 10
+                                                    красок </p>
+                                            </div>
+                                            <div class="intro-layer" data-animation="fadeInUp">
+                                                <h2>Производство гибкой полимерной упаковки</h2>
+                                            </div>
+                                            <div class="intro-layer" data-animation="fadeInUp">
+                                                <div class="slide_buttons"><a href=".contact.html"
+                                                                              class="theme_button color4 min_width_button">Оформить
+                                                    заказ</a></div>
+                                            </div>
+                                        </div>
+                                        <!-- eof .slide_description -->
+                                    </div>
+                                    <!-- eof .slide_description_wrapper -->
+                                </div>
+                                <!-- eof .col-* -->
+                            </div>
+                            <!-- eof .row -->
+                        </div>
+                        <!-- eof .container -->
+                    </li>
+                </ul>
+            </div>
+            <!-- eof flexslider -->
+        </section>
+        <section class="ls section_offset_teasers section_padding_top_10 section_padding_bottom_10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 to_animate no_appear_delay" data-animation="fadeInDown"
+                         data-delay="600">
+                        <div class="teaser top_offset_icon main_bg_color rounded text-center">
+                            <div class="teaser_icon size_small round main_bg_color"><i class="fa fa-globe"
+                                                                                       aria-hidden="true"></i></div>
+                            <h4 class="topmargin_0"><a href="#">Примеры<br> работ</a></h4>
+                            <p class="content-3lines-ellipsis">Широкий спектр печатной продукции.</p>
+                            <img src="images/packing_200x112_3.png" class="excellence_img"/>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 to_animate no_appear_delay" data-animation="fadeInDown"
+                         data-delay="300">
+                        <div class="teaser top_offset_icon main_bg_color2 rounded text-center">
+                            <div class="teaser_icon size_small round main_bg_color2"><i class="fa fa-plug"
+                                                                                        aria-hidden="true"></i></div>
+                            <h4 class="topmargin_0"><a href="#">Парк оборудования</a></h4>
+                            <p class="content-3lines-ellipsis">Современное оборудование.</p>
+                            <img src="images/testImg5.jpg" class="excellence_img"/>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 to_animate no_appear_delay" data-animation="fadeInDown"
+                         data-delay="300">
+                        <div class="teaser top_offset_icon main_bg_color3 rounded text-center">
+                            <div class="teaser_icon size_small round main_bg_color3"><i class="fa fa-leaf"
+                                                                                        aria-hidden="true"></i></div>
+                            <h4 class="topmargin_0"><a href="#">Ассортимент материалов</a></h4>
+                            <p class="content-3lines-ellipsis">Печатаем на качественных материалах.</p>
+                            <img src="images/materials_01.jpg" class="excellence_img"/>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 to_animate no_appear_delay" data-animation="fadeInDown"
+                         data-delay="600">
+                        <div class="teaser top_offset_icon main_bg_color4 rounded text-center">
+                            <div class="teaser_icon size_small round main_bg_color4"><i class="fa fa-users"
+                                                                                        aria-hidden="true"></i></div>
+                            <h4 class="topmargin_0"><a href="#">Дополнительные возможности</a></h4>
+                            <p class="content-3lines-ellipsis">Различные допечатные услуги, разработка дизайна.</p>
+                            <img src="images/dezign.jpg" class="excellence_img"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="ls section_padding_top_100 section_padding_bottom_130 columns_margin_bottom_20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12"> <span class="small-text big highlight4">
+				</span>
+                        <h2 class="section_header">О нас</h2>
+                    </div>
+                    <div class="col-md-8 col-sm-8">
+                        <p class="bold grey">2021: Мы наладили производство устойчивых пакетов из полимерных и
+                            комбинированных материалов типа ДОЙ-ПАК
+                            с возможностью нанесения полноцветной печати до десяти цветов, выборочной лакировкой,
+                            различной формы и размеров.</p>
+                        <p>Мы являемся одним из ведущих производителей высококачественной гибкой упаковки на территории
+                            Республики Беларусь. Качество производимой нами упаковки очень высоко ценится нашими
+                            клиентами из России, стран СНГ и стран ближней Европы. И во многом это обусловлено
+                            применением новейших технологий, разработанных и успешно внедренных командой опытных
+                            высококвалифицированных специалистов.
+                            Миссия нашей компании заключается в производстве конкурентоспособной продукции высочайшего
+                            качества, удовлетворяющей требованиям современного рынка.
+                            При отличной технической оснащенности и высоком качестве печати ООО "Докафлекс" предлагает
+                            конкурентную ценовую политику, что на сегодняшний день является серьезным аргументом при
+                            выборе поставщика готовой упаковки, а так же подтверждается непрерывным расширением рынков
+                            сбыта. Наша продукция широко представлена на территории всех стран Таможенного союза, а так
+                            же на Европейском рынке.
+                            Мы уделяем особое внимание непрерывному совершенствованию производственного процесса,
+                            направленного на поддержание высокого качества производимой продукции.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="person_bio">
+                            <div><img src="https://www.masterflex.by/uploads/about_960x380.png" alt=""></div>
+                            <div class="person_name grey"> Докафлекс</div>
+                            <span class="small-text highlight4">
+						Типография флексопечати
+					</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="technologies"
+                 class="ls section_padding_bottom_150 columns_margin_bottom_40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4"> <span class="small-text big highlight2">
+					Современные технологии
+				</span>
+                        <h2 class="section_header">Наши технологии</h2>
+                        <p class="topmargin_50"><a href="#" class="theme_button inverse color2 complex_button">
+						<span class="left-icon">
+							<img src="images/icons/07.svg" alt="" draggable="false">
+						</span>
+                            ПОДРОБНЕЕ
+                            <span class="right-icon">➜</span>
+                        </a></p>
+                    </div>
+                    <div class="col-md-8 col-lg-9">
+                        <div class="row row-flex">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="media bottommargin_25">
+                                    <div class="media-left media-middle"><img src="images/icons/01.svg" alt=""></div>
+                                    <div class="media-body media-middle">
+                                        <h4 class="entry-title hover-color2"><a href="#">Разработка дизайна</a></h4>
+                                    </div>
+                                </div>
+                                <p>На основании пожеланий заказчика, оформленных в виде заполненного брифа, в
+                                    дизайн-студии изготавливается индивидуальный оригинал-макет, учитывающий
+                                    технологические особенности производства данного вида упаковки.</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="media bottommargin_25">
+                                    <div class="media-left media-middle"><img src="images/icons/02.svg" alt=""></div>
+                                    <div class="media-body media-middle">
+                                        <h4 class="entry-title hover-color2"><a href="#">Обработка предоставленного
+                                            дизайна</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <p>Команда опытных специалистов репроцентра совместно с технологами по печати проводят
+                                    допечатную подготовку оригинал-макетов для дальнейшего вывода печатных форм.</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="media bottommargin_25">
+                                    <div class="media-left media-middle"><img src="images/icons/03.svg" alt=""></div>
+                                    <div class="media-body media-middle">
+                                        <h4 class="entry-title hover-color2"><a href="#">Вывод печатных форм</a></h4>
+                                    </div>
+                                </div>
+                                <p>Новый заказ быстро выходит «на цвет», который остается насыщенным на протяжении всего
+                                    тиража.</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="media bottommargin_25">
+                                    <div class="media-left media-middle"><img src="images/icons/04.svg" alt=""></div>
+                                    <div class="media-body media-middle">
+                                        <h4 class="entry-title hover-color2"><a href="#">Прямая и обратная печать до 10
+                                            красок</a></h4>
+                                    </div>
+                                </div>
+                                <p> Современное печатное оборудование, опытные печатники, отработанная технология
+                                    печати, строгая фиксация и поэтапный контроль технологических параметров по каждому
+                                    заказу – все это позволяет поддерживать высокое качество оттиска на протяжении всего
+                                    процесса печати.</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="media bottommargin_25">
+                                    <div class="media-left media-middle"><img src="images/icons/05.svg" alt=""></div>
+                                    <div class="media-body media-middle">
+                                        <h4 class="entry-title hover-color2"><a href="#">Ламинирование плёночных
+                                            материалов</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <p>Применение нескольких технологий ламинирования позволяет создавать упаковочный
+                                    материал с различными потребительскими свойствами на основе подбора соответствующих
+                                    комбинаций сырьевых материалов.</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="media bottommargin_25">
+                                    <div class="media-left media-middle"><img src="images/icons/06.svg" alt=""></div>
+                                    <div class="media-body media-middle">
+                                        <h4 class="entry-title hover-color2"><a href="#">Нанесение специальных
+                                            покрытий</a></h4>
+                                    </div>
+                                </div>
+                                <p>Технология нанесения специальных покрытий используется для улучшения эксплуатационных
+                                    свойств и качества некоторых видов упаковочного материала.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog"
+                 class="ds parallax page_blog section_padding_top_150 section_padding_bottom_130 columns_margin_bottom_30 columns_padding_25">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"> <span class="small-text big highlight">
+					Новостной блок
+				</span>
+                        <h2 class="section_header">Новости</h2>
+                        <p class="topmargin_40"><a href="news.html" class="theme_button color4">
+                            Ко всем новостям
+                        </a></p>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="owl-carousel" data-nav="true" data-dots="false" data-responsive-lg="3"
+                             data-responsive-md="2" data-responsive-sm="2">
+                            <article class="post vertical-item content-padding rounded overflow_hidden loop-color">
+                                <div class="item-media entry-thumbnail"><img src="images/events/08.jpg" alt=""></div>
+                                <div class="item-content ls news_card">
+                                    <header class="entry-header">
+                                        <div class="entry-meta content-justify small-text"> <span class="greylinks">
+										<a href="news.html">
+											<time datetime="2017-10-03T08:50:40+00:00">
+											1 мая, 2016</time>
+										</a>
+									</span> <span class="categories-links highlightlinks">
+										<a href="news.html">Новости</a>
+									</span></div>
+                                        <h4 class="entry-title"><a href="news.html">HD печать по старой
+                                            цене</a></h4>
+                                    </header>
+                                    <div class="entry-content content-3lines-ellipsis">
+                                        <p>Укажите менеджеру при оформлении заказа, что Вы желаете печать HD
+                                            качества...</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="post vertical-item content-padding rounded overflow_hidden loop-color">
+                                <div class="item-media entry-thumbnail"><img src="images/events/03.jpg" alt=""></div>
+                                <div class="item-content ls news_card">
+                                    <header class="entry-header">
+                                        <div class="entry-meta content-justify small-text"> <span class="greylinks">
+										<a href="news.html">
+											<time datetime="2017-10-03T08:50:40+00:00">
+											15 ноября, 2013</time>
+										</a>
+									</span> <span class="categories-links highlightlinks">
+										<a href="news.html">Новости</a>
+									</span></div>
+                                        <h4 class="entry-title"><a href="news.html">Soma Imperia (8
+                                            цветов)</a></h4>
+                                    </header>
+                                    <div class="entry-content content-3lines-ellipsis">
+                                        <p>Введена в эксплуатацию очередная печатная машина Soma Imperia (8
+                                            цветов)...</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="post vertical-item content-padding rounded overflow_hidden loop-color">
+                                <div class="item-media entry-thumbnail"><img src="images/events/10.jpg" alt=""></div>
+                                <div class="item-content ls news_card">
+                                    <header class="entry-header">
+                                        <div class="entry-meta content-justify small-text"> <span class="greylinks">
+										<a href="news.html">
+											<time datetime="2017-10-03T08:50:40+00:00">
+											10 сентября, 2013</time>
+										</a>
+									</span> <span class="categories-links highlightlinks">
+										<a href="news.html">Новости</a>
+									</span></div>
+                                        <h4 class="entry-title"><a href="news.html">ISO
+                                            9001:2008<br><br></a></h4>
+                                    </header>
+                                    <div class="entry-content content-3lines-ellipsis">
+                                        <p>Принято положительное решение о выдаче сертификата соответствия требованиям
+                                            ISO 9001:2008...</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="post vertical-item content-padding rounded overflow_hidden loop-color">
+                                <div class="item-media entry-thumbnail"><img src="images/events/04.jpg" alt=""></div>
+                                <div class="item-content ls news_card">
+                                    <header class="entry-header">
+                                        <div class="entry-meta content-justify small-text"> <span class="greylinks">
+										<a href="news.html">
+											<time datetime="2017-10-03T08:50:40+00:00">
+											9 августа, 2013</time>
+										</a>
+									</span> <span class="categories-links highlightlinks">
+										<a href="news.html">Новости</a>
+									</span></div>
+                                        <h4 class="entry-title"><a href="news.html">Аудит системы
+                                            менеджмета</a></h4>
+                                    </header>
+                                    <div class="entry-content content-3lines-ellipsis">
+                                        <p>Проведен аудит системы менеджмента качества ООО "Докафлекс"...</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="post vertical-item content-padding rounded overflow_hidden loop-color">
+                                <div class="item-media entry-thumbnail"><img src="images/events/06.jpg" alt=""></div>
+                                <div class="item-content ls news_card">
+                                    <header class="entry-header">
+                                        <div class="entry-meta content-justify small-text"> <span class="greylinks">
+										<a href="news.html">
+											<time datetime="2017-10-03T08:50:40+00:00">
+											22 июля, 2013</time>
+										</a>
+									</span> <span class="categories-links highlightlinks">
+										<a href="news.html">Новости</a>
+									</span></div>
+                                        <h4 class="entry-title"><a href="news.html">Сертификат KodakNX</a>
+                                        </h4>
+                                    </header>
+                                    <div class="entry-content content-3lines-ellipsis">
+                                        <p>Мы первыми в РБ получили сертификат, подтверждающий качество
+                                            изготавливаемых...</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="post vertical-item content-padding rounded overflow_hidden loop-color">
+                                <div class="item-media entry-thumbnail"><img src="images/events/11.jpg" alt=""></div>
+                                <div class="item-content ls news_card">
+                                    <header class="entry-header">
+                                        <div class="entry-meta content-justify small-text"> <span class="greylinks">
+										<a href="news.html">
+											<time datetime="2017-10-03T08:50:40+00:00">
+											31 jan, 2018</time>
+										</a>
+									</span> <span class="categories-links highlightlinks">
+										<a href="news.html">Новости</a>
+									</span></div>
+                                        <h4 class="entry-title"><a href="news.html">Тестирование 200
+                                            линиатуры</a></h4>
+                                    </header>
+                                    <div class="entry-content content-3lines-ellipsis">
+                                        <p>Применение в производстве анилоксовых валов с нетрадиционными формами
+                                            гравирования ячеек...</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" class="ls section_padding_top_150 section_padding_bottom_150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-4"> <span class="small-text big highlight2">
+					Отзывы
+				</span>
+                        <h2 class="section_header">Отзывы наших клиентов</h2>
+                        <div id="testimonials-dots" class="owl-dots topmargin_50"></div>
+                        <p class="topmargin_40"><a href=".blog-left.html" class="theme_button color4">
+                            Оставить отзыв
+                        </a></p>
+                    </div>
+                    <div class="col-sm-8 col-lg-9">
+                        <div class="owl-carousel" data-responsive-lg="3" data-responsive-md="2" data-nav="false"
+                             data-dots="true" data-dots-container="#testimonials-dots">
+                            <blockquote class="loop-color">
+                                <div class="media bottommargin_20">
+                                    <div class="media-left media-middle">
+                                        <div class="avatar"><img src="images/faces/02.jpg" alt=""></div>
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <h5>Иванов Иван</h5> <span class="small-text highlight">ООО "Отзыв1"</span>
+                                    </div>
+                                </div>
+                                <p>«Текст отзыва1.» </p>
+                            </blockquote>
+                            <blockquote class="loop-color">
+                                <div class="media bottommargin_20">
+                                    <div class="media-left media-middle">
+                                        <div class="avatar"><img src="images/faces/03.jpg" alt=""></div>
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <h5>Петров Петр</h5> <span class="small-text highlight">ООО "Отзыв2"</span>
+                                    </div>
+                                </div>
+                                <p>«Текст отзыва2.»</p>
+                            </blockquote>
+                            <blockquote class="loop-color">
+                                <div class="media bottommargin_20">
+                                    <div class="media-left media-middle">
+                                        <div class="avatar"><img src="images/faces/04.jpg" alt=""></div>
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <h5>Сидоров Сидор</h5> <span class="small-text highlight">ООО "Отзыв3"</span>
+                                    </div>
+                                </div>
+                                <p>«Текст отзыва3.» </p>
+                            </blockquote>
+                            <blockquote class="loop-color">
+                                <div class="media bottommargin_20">
+                                    <div class="media-left media-middle">
+                                        <div class="avatar"><img src="images/faces/05.jpg" alt=""></div>
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <h5>Николаев Николай</h5> <span class="small-text highlight">ООО "Отзыв4"</span>
+                                    </div>
+                                </div>
+                                <p>«Текст отзыва4.» </p>
+                            </blockquote>
+                            <blockquote class="loop-color">
+                                <div class="media bottommargin_20">
+                                    <div class="media-left media-middle">
+                                        <div class="avatar"><img src="images/faces/06.jpg" alt=""></div>
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <h5>Иванов Иван</h5> <span class="small-text highlight">ООО "Отзыв5"</span>
+                                    </div>
+                                </div>
+                                <p>«Текст отзыва5.»</p>
+                            </blockquote>
+                            <blockquote class="loop-color">
+                                <div class="media bottommargin_20">
+                                    <div class="media-left media-middle">
+                                        <div class="avatar"><img src="images/faces/07.jpg" alt=""></div>
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <h5>Петров Иван</h5> <span class="small-text highlight">ООО "Отзыв6"</span>
+                                    </div>
+                                </div>
+                                <p>«Текст отзыва6.» </p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="page_footer ds section_padding_top_30 section_padding_bottom_30 columns_margin_bottom_30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 text-center">
+                        <div class="logo_footer vertical_logo topmargin_20"><img src="images/logoFooter.svg" alt=""
+                                                                                 class="logo_footer"> <span
+                                class="logo_text">
+                       <small>Типография флексопечати</small>
+                    </span></div>
+                    </div>
+                    <div class="col-lg-6 col-md-4 col-sm-6 text-center text-sm-left">
+                        <div class="widget widget_text greylinks color2">
+                            <h4 class="widget-title"> Наши контакты </h4>
+                            <div class="media small-media">
+                                <div class="media-left"><i class="fa fa-map-marker highlight2"></i></div>
+                                <div class="media-body">РБ, Минская область, Минский район, Новодворский с/с, 27А-1,
+                                    район аг. Гатово
+                                </div>
+                            </div>
+                            <div class="media small-media">
+                                <div class="media-left"><i class="fa fa-pencil highlight2"></i></div>
+                                <div class="media-body"><a href="mailto:info@dokaflex.bу">info@dokaflex.bу</a>
+                                </div>
+                            </div>
+                            <div class="media small-media">
+                                <div class="media-left"><i class="fa fa-phone highlight2"></i></div>
+                                <div class="media-body"><a href=tel:+375293857300">+375 29 385 73 00</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="ds ms page_copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p>&copy; Design.Studio/DokaFlex'2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- eof #box_wrapper -->
+</div>
+<!-- eof #canvas -->
+<script src="js/compressed.js"></script>
+<script src="js/main.js"></script>
+<!-- Google Map Script -->
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTwYSMRGuTsmfl2z_zZDStYqMlKtrybxo"></script>
+</body>
+
+</html>

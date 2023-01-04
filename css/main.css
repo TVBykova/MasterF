@@ -7211,7 +7211,7 @@ body.boxed {
 
 @media (min-width: 1600px) {
     .logo img {
-        max-width: 130px;
+        max-width: 100px;
     }
     .logo_footer img {
         max-width: 200px;
@@ -7228,7 +7228,7 @@ body.boxed {
 
 @media (max-width: 414px) {
     .logo.logo_with_text img {
-        max-width: 150px;
+        max-width: 100px;
     }
 }
 
@@ -11366,7 +11366,7 @@ body.active-side-header.slide-right .page_header_side {
 
 @media (max-width: 1600px) {
     .logo img {
-        max-width: 130px;
+        max-width: 100px;
     }
 }
 
@@ -16610,30 +16610,24 @@ a.color-icon.border-icon:hover {
 }
 
 .logo_mobMenu {
-    max-width: 150px;
+    max-width: 100px;
 }
 
 .mouse-parallax {
-    height: 500px;
+    height: 300px;
     position: relative;
     overflow: hidden;
+    background-image: url(../images/texture_fabric.png);
 }
 .mouse-parallax-bg,
 .mouse-parallax-fog-1,
 .mouse-parallax-fog-2 {
     position: absolute;
-    background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 110%;
     height: 110%;
     transition: all 0.1s ease;
-    background-image: url(https://www.ardmorewhisky.com/modules/custom/bsi_core/src/img/Layer_1.jpg);
+
 }
-.mouse-parallax-fog-1 {
-    background-image: url(https://www.ardmorewhisky.com/modules/custom/bsi_core/src/img/Layer_2.png);
-    left: -10%;
-}
-.mouse-parallax-fog-2 {
-    background-image: url(https://www.ardmorewhisky.com/modules/custom/bsi_core/src/img/Layer_3.png);
-}
+
