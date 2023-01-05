@@ -7,7 +7,15 @@ var $window = jQuery(window);
 
 //hidding menu elements that do not fit in menu width
 //processing center logo
-function menuHideExtraElements() {
+	$(document).on("ready", function() {
+		$(window).trigger("resize");
+		horizontalPrallax();
+	});
+	$(window).on("scroll", function() {
+		horizontalPrallax();
+	});
+
+	function menuHideExtraElements() {
 	
 	//cleaneng changed elements
 	jQuery('.sf-more-li, .sf-logo-li').remove();
@@ -1406,6 +1414,27 @@ $window.on('resize', function(){
 	
 });
 //end of IIFE function
+	function horizontalPrallax() {
+		$('.st-parallax-shape-wpra').each(function() {
+			var windowScroll = $(document).scrollTop(),
+				windowHeight = $(window).height(),
+				barOffset = $(this).offset().top,
+				barHeight = $(this).height(),
+				barScrollAtZero = windowScroll - barOffset + windowHeight,
+				barHeightWindowHeight = windowScroll + windowHeight,
+				barScrollUp = barOffset <= (windowScroll + windowHeight),
+				barSctollDown = barOffset + barHeight >= windowScroll;
+
+			if (barSctollDown && barScrollUp) {
+				var calculadedHeight = barHeightWindowHeight - barOffset;
+				var calcWindowScroll = ((calculadedHeight / 15));
+				var calcWindowScroll2 = ((calculadedHeight / 5));
+				$(this).find('.st-parallax-shape.st-style1').css('margin-top', ("-" + calcWindowScroll2 + "px"));
+				$(this).find('.st-parallax-shape.st-style1').css('margin-right', ("-" + calcWindowScroll + "px"));
+				$(this).find('.st-parallax-shape.st-style2').css('transform', `rotate(${calcWindowScroll}deg)`);
+			}
+		});
+	}
 
 })();
 
