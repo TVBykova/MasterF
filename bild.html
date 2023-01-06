@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>DokaFlex</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">
+			<i class="rt-icon2-cross2"></i>
+		</span>
+	</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group bottommargin_0"> <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input"> </div> <button type="submit" class="theme_button no_bg_button">Search</button> </form>
+		</div>
+	</div>
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+		</div>
+	</div>
+	<!-- eof .modal -->
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+			<!-- template sections -->
+			<header class="page_header header_white tall_header toggler_xs_right columns_margin_0">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 display_table">
+							<div class="header_left_logo display_table_cell">
+								<div><a href="./" class="logo logo_with_text">
+									<div><img src="images/logo.svg" alt=""></div>
+									<div> <span class="logo_text">
+                            <small>Производство пакетов</small>
+                        </span>
+									</div>
+								</a></div>
+							</div>
+							<div class="header_mainmenu display_table_cell text-center">
+								<!-- main nav start -->
+								<nav class="mainmenu_wrapper">
+									<ul class="mainmenu nav sf-menu">
+										<img src="images/logo.svg" alt="" class="logo_mobMenu">
+										<li class="active"><a href="index.html">О компании</a>
+											<ul>
+												<li><a href="bild.html">О нас</a></li>
+												<li><a href="bild.html">История</a></li>
+												<li><a href="bild.html">Новости</a></li>
+												<li><a href="bild.html">Технологии</a></li>
+												<li><a href="bild.html">Ваши отзывы</a></li>
+												<li><a href="bild.html">Сертификаты</a></li>
+											</ul>
+										</li>
+										<!-- <li><a href="products.html">Продукция</a>
+                                         <ul>
+                                             <li><a href="products_bakery.html">ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ</a></li>
+                                             <li><a href="products_grocery.html">БАКАЛЕЙНАЯ ПРОДУКЦИЯ </a></li>
+                                             <li><a href="products_milk.html">МОЛОЧНАЯ ПРОДУКЦИЯ</a></li>
+                                             <li><a href="products_semi_finished.html">ПОЛУФАБРИКАТЫ И ЗАМОРОЖЕННАЯ
+                                                 ПРОДУКЦИЯ </a></li>
+                                             <li><a href="products_drink.html">ПИВО И БЕЗАЛКОГОЛЬНАЯ ПРОДУКЦИЯ</a></li>
+                                             <li><a href="products_hygiene.html">СРЕДСТВА ГИГИЕНЫ И БЫТОВАЯ
+                                                 ХИМИЯ </a></li>
+                                             <li><a href="products_confection.html">КОНДИТЕРСКИЕ ИЗДЕЛИЯ </a></li>
+                                             <li><a href="products_packs.html">ПАКЕТЫ</a></li>
+                                             <li><a href="products_another.html">ДРУГОЕ </a></li>
+                                         </ul>
+                                     </li>
+
+                                        <li><a href=".technologies.html">Услуги</a>
+                                            <ul>
+                                                <li><a href=".technologies.html">Разработка дизайна</a></li>
+                                                <li><a href=".technology-single.html">Адаптация изображения</a></li>
+                                                <li><a href=".technology-single.html">Производство печатных форм</a></li>
+                                                <li><a href=".technology-single.html">Производство упаковки</a></li>
+                                                <li><a href=".technology-single.html">Резка рулонных материалов</a></li>
+                                                <li><a href=".technology-single.html">Ламинирование рулонов</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href=".technologies.html">Материалы</a>
+                                            <ul>
+                                                <li><a href=".technologies.html">БУМАГА ЛАМИНИРОВАННАЯ</a></li>
+                                                <li><a href=".technology-single.html">КВАДРЕКС, ТРИПЛЕКС</a></li>
+                                                <li><a href=".technology-single.html">МАТЕРИАЛЫ С МЕЖСЛОЙНОЙ ПЕЧАТЬЮ</a>
+                                                </li>
+                                                <li><a href=".technology-single.html">ПЛЕНКИ С TWIST-ЭФФЕКТОМ</a></li>
+                                                <li><a href=".technology-single.html">ПОЛИПРОПИЛЕН ЖЕМЧУЖНЫЙ</a></li>
+                                                <li><a href=".technology-single.html">ПОЛИПРОПИЛЕН МЕТАЛЛИЗИРОВАННЫЙ</a>
+                                                </li>
+                                                <li><a href=".technology-single.html">ПОЛИПРОПИЛЕН ПРОЗРАЧНЫЙ</a></li>
+                                                <li><a href=".technology-single.html">ПОЛИЭТИЛЕН БЕЛЫЙ</a></li>
+                                                <li><a href=".technology-single.html">ФОЛЬГА КАШИРОВАННАЯ</a></li>
+                                                <li><a href=".technology-single.html">ВИДЫ И ОБЛАСТЬ ПРИМЕНЕНИЯ</a></li>
+                                            </ul>
+                                        </li>-->
+										<li><a href="bild.html">Оборудование</a>
+											<ul>
+												<li><a href="bild.html">БОБИНОРЕЗАЛЬНАЯ МАШИНА PLUTO II</a></li>
+												<li><a href="bild.html">БОБИНОРЕЗАЛЬНАЯ МАШИНА VENUS III</a>
+												</li>
+												<li><a href="bild.html">ЛАМИНАТОРЫ LAMIFLEX И COMEXI</a></li>
+												<li><a href="bild.html">СИСТЕМА KODAK FLEXCEL NX</a></li>
+												<li><a href="bild.html">ПЕЧАТНЫЕ МАШИНЫ SOMA FLEX IMPERIA</a>
+												</li>
+												<li><a href="bild.html">КОНТРОЛЬНО-ИЗМЕРИТЕЛЬНОЕ
+													ОБОРУДОВАНИЕ</a></li>
+											</ul>
+										</li>
+										<li><a href="bild.html">Вакансии</a></li>
+										<!-- contacts -->
+										<li><a href="bild.html">Контакты</a></li>
+										<!-- eof contacts -->
+									</ul>
+								</nav>
+								<!-- eof main nav -->
+								<!-- header toggler --><span class="toggle_menu"><span></span></span>
+							</div>
+							<div class="header_right_buttons display_table_cell text-right hidden-xs">
+								<div class="logo_text logo_phone"><span class="grey"><a href="tel:+375293857300">+375 29 385 73 00</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="ls ms section_404 section_padding_top_25 section_padding_bottom_50">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<img src="images/bild.png"/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="page_footer ds section_padding_top_30 section_padding_bottom_30 columns_margin_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-12 text-center">
+							<div class="logo_footer vertical_logo topmargin_20"><img src="images/logoFooter.svg" alt="" class="logo_footer"> <span
+									class="logo_text">
+                       <small>Производство пакетов</small>
+                    </span></div>
+						</div>
+						<div class="col-lg-6 col-md-4 col-sm-6 text-center text-sm-left">
+							<div class="widget widget_text greylinks color2">
+								<h4 class="widget-title"> Наши контакты </h4>
+								<div class="media small-media">
+									<div class="media-left"><i class="fa fa-map-marker highlight2"></i></div>
+									<div class="media-body">РБ, Минская область, Минский район, Новодворский с/с, 27А-1,
+										район аг. Гатово
+									</div>
+								</div>
+								<div class="media small-media">
+									<div class="media-left"><i class="fa fa-pencil highlight2"></i></div>
+									<div class="media-body"><a href="mailto:info@masterflex.bу">info@masterflex.bу</a>
+									</div>
+								</div>
+								<div class="media small-media">
+									<div class="media-left"><i class="fa fa-phone highlight2"></i></div>
+									<div class="media-body"><a href=tel:+375293857300">+375 29 385 73 00</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<section class="ds ms page_copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p>&copy; Design.Studio/DokaFlex'2023</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
